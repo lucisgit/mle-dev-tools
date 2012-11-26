@@ -1,0 +1,15 @@
+{
+    "name": "Display MLE frontend",
+    "version": "0.1",
+    "description": "This displays the frontend you are actually using",
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "js": [ "script.js" ],
+        "matches": [ "https://modules.lancs.ac.uk/*", "https://mahara.lancs.ac.uk/*" ],
+        "run_at": "document_idle"
+    } ],
+    "permissions": [ "cookies", "http://*/*", "https://*/*" ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
