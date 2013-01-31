@@ -5,7 +5,14 @@
     "manifest_version": 2,
     "content_scripts": [ {
         "js": [ "script.js" ],
-        "matches": [ "https://modules.lancs.ac.uk/*", "https://mahara.lancs.ac.uk/*" ],
+        "matches": [
+            "https://modules.lancs.ac.uk/*",
+            "https://mahara.lancs.ac.uk/*",
+            "https://openlearning.lancs.ac.uk/*",
+            "http://www.health-research-courses.net/*",
+            "http://www.lancaster-doctoral.net/*"
+        ],
+
         "run_at": "document_idle"
     } ],
     "permissions": [ "cookies", "http://*/*", "https://*/*" ],
