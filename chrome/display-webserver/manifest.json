@@ -1,6 +1,6 @@
 {
     "name": "Display MLE frontend",
-    "version": "0.2",
+    "version": "0.3",
     "description": "This displays the frontend you are actually using",
     "manifest_version": 2,
     "content_scripts": [ {
