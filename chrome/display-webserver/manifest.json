@@ -1,22 +1,20 @@
 {
     "name": "Display MLE frontend",
-    "version": "0.3",
+    "version": "0.4",
     "description": "This displays the frontend you are actually using",
     "manifest_version": 2,
     "content_scripts": [ {
         "js": [ "script.js" ],
         "matches": [
-            "https://modules.lancs.ac.uk/*",
-            "https://mahara.lancs.ac.uk/*",
-            "https://openlearning.lancs.ac.uk/*",
-            "http://www.health-research-courses.net/*",
-            "http://www.lancaster-doctoral.net/*"
+            "http://*/*",
+            "https://*/*"
         ],
 
         "run_at": "document_idle"
     } ],
-    "permissions": [ "cookies", "http://*/*", "https://*/*" ],
+    "permissions": [ "cookies", "http://*/*", "https://*/*", "storage" ],
     "background": {
         "scripts": ["background.js"]
-    }
+    },
+    "options_page": "options.html"
 }
